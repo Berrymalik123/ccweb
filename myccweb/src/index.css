@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-icon:hover {
+  animation-duration: 1.5s;
+}
+
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-wave path {
+  animation: wave 20s linear infinite;
+}
+
+
+/* About SEc */
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.9s ease-out;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.9s ease-out;
+}
+
+
+.animate-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* testimonials */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
